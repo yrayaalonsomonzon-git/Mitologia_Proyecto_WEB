@@ -322,6 +322,11 @@ header {
      color: #e5cd78;
 }
 
+.leyenda span{
+     cursor: pointer;
+     color: gold;
+     }
+     
 /* ============================== PAGINA MITOLOGIAS ==============================*/
 
 /* CARRUSEL */

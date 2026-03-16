@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../.css/estilo.css">
     <title>Mundo de las Mitologias</title>
 </head>
@@ -13,7 +13,7 @@
     <!-- CABECERA -->
     <header>
         <div class="logo-header"> <!-- LOGO -->
-            <img src="/img/favicon.png" alt="Logo Mundo de las Mitologias">
+            <img src="../img/favicon.png" alt="Logo Mundo de las Mitologias">
         </div>
         <h1 class="titulo-principal">Mundo de las Mitologias</h1>
         <!-- ICONOS PRINCIPALES -->
@@ -99,22 +99,24 @@
                 <h2>Mapa y Leyeda De las Mitologias</h2>
                 <br>
                 <!-- MAPA GOOGLE -->
-                <iframe
+                <iframe id="mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48841587.69317941!2d-18.558331368037358!3d41.654576647821365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEuropa!5e0!3m2!1ses!2ses!4v1771088539968!5m2!1ses!2ses"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
             <!-- LEYENDA -->
             <div class="leyenda">
                 <strong>
                     Leyenda del mapa:
                 </strong>
+                
                 <ul>
-                    <li><span>Grecia</span>: Mitologia Griega</li>
-                    <li><span>Escandinavia</span>: Mitologia Nordica</li>
-                    <li><span>Islandia</span>: Mitologia Nordica</li>
-                    <li><span>Noruega</span>: Mitologia Nordica</li>
-                    <li><span>Egipto</span>: Mitologia Egipcia</li>
+                    <li><span id="grecia">Grecia</span>: Mitologia Griega</li>
+                    <li><span id="escandinavia">Escandinavia</span>: Mitologia Nordica</li>
+                    <li><span id="islandia">Islandia</span>: Mitologia Nordica</li>
+                    <li><span id="noruega">Noruega</span>: Mitologia Nordica</li>
+                    <li><span id="egipto">Egipto</span>: Mitologia Egipcia</li>
                 </ul>
             </div>
         </div>
@@ -124,6 +126,7 @@
     <footer>
         <p>&copy; Mundo de las Mitologias - Proyecto WEB</p>
     </footer>
+    <script src="../.js/interactive-map.js"></script>
 </body>
 
 </html>
