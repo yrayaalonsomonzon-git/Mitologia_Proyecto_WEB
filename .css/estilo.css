@@ -1,0 +1,678 @@
+/* RESET GLOBAL */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* FUENTES PERSONALIZADAS */
+@font-face {
+     font-family: 'A_mano_regular_old';
+     src: url('../font/amanoregulold/AManoRegulold.woff2') format('woff2');
+}
+
+@font-face {
+     font-family: 'Stranger_Things';
+     src: url('../font/stranger_things/StrangerThings-Regular.woff2') format('woff2');
+}
+
+/* ============================== ESTILO GLOBAL ==============================*/
+
+/* ESTILO DEL BODY */
+
+body {
+     font-family: 'A_mano_regular_old', 'Stranger_Things';
+     background: #1a1612;
+     color: #e8e4df;
+     line-height: 1.6;
+}
+
+/* CABECERA */
+
+header {
+     background: #2d2620;
+     padding: 24px 32px;
+     text-align: center;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+     position: relative;
+}
+
+/* LOGO */
+
+.logo-header {
+     position: absolute;
+     top: 24px;
+     left: 32px;
+}
+
+.logo-header img {
+     width: 100px;
+     height: 100px;
+     border-radius: 20%;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.titulo-principal {
+     font-family: 'Stranger_Things', Impact, sans-serif;
+     font-size: 35px;
+     color: #c9a227;
+}
+
+/* ICONOS CABECERA */
+
+.iconos-header {
+     display: flex;
+     justify-content: center;
+     gap: 48px;
+     margin: 16px 0 24px;
+}
+
+/* ICONOS */
+
+.icono {
+     width: 60px;
+     height: 60px;
+     border: 2px solid #c9a227;
+     border-radius: 8px;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     transition: box-shadow 0.2s;
+}
+
+.icono:hover {
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+}
+
+/* Iconos según mitología */
+.icono-griego {
+     background-image: url('../img/griego.png');
+}
+
+.icono-nordico {
+     background-image: url('../img/nordico.png');
+}
+
+.icono-egipcio {
+     background-image: url('../img/egipcio.png');
+}
+
+/* MENU PRINCIPAL */
+
+.navbar {
+     border-top: 2px solid #c9a227;
+     padding-top: 16px;
+}
+
+.navbar ul {
+     display: flex;
+     list-style: none;
+     justify-content: center;
+     gap: 8px;
+}
+
+.navbar a {
+     color: #e8e4df;
+     text-decoration: none;
+     padding: 8px 16px;
+     margin: 0 3px;
+     border: 1px solid transparent;
+     transition: color 0.3s, border-color 0.3s;
+}
+
+.navbar a:hover {
+     color: #e6c44a;
+     border-color: #c9a227;
+}
+
+/* Enlace activo del menú, marcado con subrayado en dorado */
+.navbar a.activo {
+     color: #c9a227;
+     font-weight: bold;
+     border-bottom: 2px solid #c9a227;
+}
+
+/* ============================== PAGINA PRINCIPAL (HOME) ==============================*/
+
+/* CONTENIDO PRINCIPAL */
+
+.principal {
+     max-width: 900px;
+     margin: 48px auto;
+     padding: 32px;
+     text-align: center;
+}
+
+.principal h2 {
+     font-family: 'Stranger_Things', Impact, sans-serif;
+     font-size: 29px;
+     color: #c9a227;
+     margin-bottom: 16px;
+}
+
+.principal p {
+     color: #e8e4df;
+     font-size: 18px;
+}
+
+/* IMAGEN CONTACTO */
+
+.img-hermes {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 6px;
+}
+
+/* TARJETAS DE MITOLOGÍAS */
+
+.tarjetas {
+     display: flex;
+     gap: 32px;
+     max-width: 1100px;
+     margin: 0 auto 48px;
+     padding: 0 32px;
+}
+
+/* CAMBIO DE COLOR DE LAS TARJETAS */
+.tarjeta {
+     flex: 1 1 280px;
+     background: #2d2620;
+     border: 2px solid black;
+     border-radius: 8px;
+     padding: 24px;
+     text-align: center;
+     transition: box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+}
+
+.tarjeta h3 {
+     color: #c9a227;
+     margin-bottom: 16px;
+     font-size: 21px;
+}
+
+.tarjeta-img {
+     height: 180px;
+     margin: 16px 0;
+     border-radius: 6px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #8a8278;
+}
+
+/* Fondo de cada tarjeta según tipo de mitología */
+.tarjeta-griega,
+.tarjeta-nordica,
+.tarjeta-egipcia {
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     border: 2px solid #c9a227;
+     border-radius: 8px;
+}
+
+.tarjeta-griega {
+     background-image: url(../img/Griega.png);
+}
+
+.tarjeta-nordica {
+     background-image: url(../img/Nordica.png);
+}
+
+.tarjeta-egipcia {
+     background-image: url(../img/Egipcia.png);
+}
+
+.tarjeta p {
+     margin: 16px 0;
+     color: #e8e4df;
+}
+
+/* ============================== PAGINA CONTACTO ==============================*/
+
+/* TARJETA SECCION CONTACTO */
+
+.tarjeta-hermes {
+     width: 100%;
+     max-width: none;
+     margin: 48px 0;
+     padding: 32px;
+     background: #2d2620;
+     border-radius: 8px;
+     border: 1px solid #c9a227;
+     transition: box-shadow 0.3s;
+     text-align: center;
+     font-size: 0.95em;
+}
+
+.tarjeta-hermes:hover {
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+}
+
+/* MAPA DE CONTACTO */
+
+.mapa-contacto {
+     width: 90%;
+     max-width: 800px;
+     min-width: 280px;
+     background: #2d2620;
+     border: 1px solid #c9a227;
+     border-radius: 10px;
+     box-shadow: 0 4px 20px rgba(201, 162, 39, 0.13);
+     margin: 32px auto 0 auto;
+     padding: 24px 16px;
+     text-align: center;
+}
+
+.mapa-contacto iframe {
+     width: 100%;
+     height: px;
+     border: 0;
+     border-radius: 7px;
+     box-shadow: 0 4px 20px rgba(201, 162, 39, 0.16);
+     margin: 0 auto;
+     display: block;
+     transition: box-shadow 0.2s;
+}
+
+.mapa-contacto iframe:focus {
+     box-shadow: 0 0 0 3px #e6c44a;
+     outline: none;
+}
+
+/* LEYENDA DEL MAPA (CONTACTO) */
+
+.leyenda {
+     max-width: 500px;
+     margin: 25px auto 0 auto;
+     background: #2d2620;
+     border: 1px solid #c9a227;
+     border-radius: 8px;
+     padding: 20px 22px;
+     color: #e8e4df;
+     box-shadow: 0 4px 12px rgba(201, 162, 39, 0.08);
+     font-size: 1em;
+}
+
+.leyenda strong {
+     font-size: 1.14em;
+     color: #c9a227;
+     display: block;
+     margin-bottom: 8px;
+     letter-spacing: 1px;
+}
+
+.leyenda ul {
+     list-style-type: disc;
+     margin: 0 0 0 20px;
+     padding: 0;
+}
+
+.leyenda li {
+     margin-bottom: 6px;
+}
+
+.leyenda li span {
+     font-weight: bold;
+     color: #e5cd78;
+}
+
+.leyenda span{
+     cursor: pointer;
+     color: gold;
+     }
+     
+/* ============================== PAGINA MITOLOGIAS ==============================*/
+
+/* CARRUSEL */
+
+.slider {
+     display: flex;
+     /* scrollbar en slider */
+     overflow-x: auto;
+     gap: 18px;
+     margin: 0 auto 30px;
+     padding: 0;
+     max-width: 960px;
+     scrollbar-color: #c9a227 #2d2620;
+}
+
+.slider li {
+     flex: 0 0 auto;
+     display: flex;
+     flex-direction: column;
+     background: #2d2620;
+     border: 2px solid black;
+     border-radius: 18px;
+     max-width: 400px;
+     box-shadow: 0 6px 24px rgba(201, 162, 39, 0.15);
+     padding: 38px 32px;
+     margin-right: 16px;
+     align-items: center;
+}
+
+.slider li img {
+     width: 200px;
+     height: 200px;
+     border-radius: 16px;
+     margin-bottom: 18px;
+     border: 3px solid #e5cd78;
+     background: #332b21;
+     box-shadow: 0 3px 10px rgba(201, 162, 39, 0.13);
+}
+
+.slider li p {
+     margin: 0;
+     color: #e8e4df;
+     text-align: justify;
+}
+
+h2 {
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     margin-bottom: 60px;
+}
+
+/* CONTENIDO PAGINA MITOLOGIA */
+
+h3 {
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     margin-bottom: 60px;
+}
+
+.dioses {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 30px 0 0 0;
+     padding: 20px 0;
+     justify-content: center;
+     gap: 24px;
+}
+
+.dioses div {
+     width: 50%;
+     min-width: 300px;
+     max-width: 450px;
+     background: #271f15;
+     border-radius: 8px;
+     padding: 20px;
+     border: 1px solid #c9a227;
+     margin-bottom: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.dioses div h3 {
+     color: #c9a227;
+     margin-bottom: 10px;
+     margin-top: 0;
+     text-align: center;
+}
+
+.dioses div img {
+     width: 80%;
+     height: 280px;
+     border: 1px solid #c9a227;
+     margin-bottom: 12px;
+     margin-top: 2px;
+     border-radius: 8px;
+     background: #332b21;
+}
+
+
+.dioses div p {
+     color: #e8e4df;
+     font-size: 1em;
+     text-align: justify;
+     margin: 0;
+     line-height: 1.5;
+}
+
+/* ============================== VIDEO BANNER PRINCIPAL ==============================*/
+
+video {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto 24px auto;
+     border-radius: 8px;
+     box-shadow: 0 4px 18px rgba(201, 162, 39, 0.15);
+}
+
+/* ============================== FORMULARIO CONTACTO ==============================*/
+
+/* Espaciado entre formularios y elementos */
+.formulario-contacto {
+     margin-bottom: 16px;
+}
+
+.formulario-contacto>div {
+     margin-bottom: 18px;
+}
+
+.formulario-contacto label {
+     display: block;
+     margin-bottom: 5px;
+     color: #c9a227;
+}
+
+/* Inputs y textarea personalizados al estilo del sitio */
+.formulario-contacto input,
+.formulario-contacto textarea {
+     width: 100%;
+     padding: 10px;
+     background: #1a1612;
+     border: 2px solid #c9a227;
+     border-radius: 4px;
+     color: #e8e4df;
+     font-family: inherit;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+     outline: none;
+     border-color: #e6c44a;
+}
+
+.formulario-contacto select {
+     width: 100%;
+     padding: 10px;
+     background: #1a1612;
+     border: 2px solid #c9a227;
+     border-radius: 6px;
+     color: #e8e4df;
+     font-family: inherit;
+     font-size: 1em;
+     transition: border-color 0.2s;
+}
+
+/* Foco en select: borde clarito */
+.formulario-contacto select:focus {
+     border-color: #e8e4df;
+     outline: none;
+}
+
+.formulario-contacto option {
+     background: #2d2620;
+     color: #e8e4df;
+}
+
+/* Radios especiales mitologías dentro del formulario */
+.formulario-contacto .grupo-mitologia {
+     display: flex;
+     gap: 20px;
+     margin-top: 6px;
+     margin-bottom: 2px;
+}
+
+.formulario-contacto .grupo-mitologia label {
+     display: flex;
+     align-items: center;
+     gap: 6px;
+     background: #1a1612;
+     padding: 6px 12px;
+     border: 1.5px solid #c9a227;
+     border-radius: 6px;
+     color: #e8e4df;
+     cursor: pointer;
+     font-size: 1em;
+}
+
+/* ============================== PAGINA CONTACTO ==============================*/
+
+.contacto-preview {
+     width: 100%;
+     max-width: none;
+     margin: 48px 0;
+     padding: 32px;
+     background: #2d2620;
+     border-radius: 8px;
+     border: 1px solid #c9a227;
+     transition: box-shadow 0.3s;
+}
+
+.contacto-preview:hover {
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+}
+
+.contacto-preview h2 {
+     color: #c9a227;
+     margin-bottom: 8px;
+}
+
+.contacto-preview p {
+     margin-bottom: 24px;
+}
+
+/* COLUMNAS CONTACTO */
+
+.contenedor-columnas {
+     display: flex;
+     gap: 32px;
+     max-width: 1200px;
+     margin: 32px auto;
+     padding: 0 32px;
+     align-items: stretch;
+     /* Iguala altura columnas */
+}
+
+/* BOTONES */
+
+.btn {
+     display: inline-block;
+     padding: 10px 24px;
+     background: #c9a227;
+     color: #1a1612;
+     text-decoration: none;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-family: inherit;
+     font-weight: bold;
+     transition: background 0.3s, color 0.3s;
+}
+
+/* Hover en botón: destaca dorado claro */
+.btn:hover {
+     background: #e6c44a;
+     color: #1a1612;
+}
+
+.btn-enviar {
+     padding: 13px 32px;
+}
+
+/* ============================== FOOTER ==============================*/
+
+footer {
+     text-align: center;
+     padding: 24px;
+     margin-top: 48px;
+     border-top: 2px solid #c9a227;
+     color: #8a8278;
+}
+
+/* ============================== MEDIA QUERRYS ==============================*/
+
+/* MEDIA QUERRY PAGINA MITOLOGIA */
+
+@media (max-width: 800px) {
+     .tarjetas {
+          flex-direction: column;
+          gap: 20px;
+          padding: 0 8px;
+     }
+
+     .navbar ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+     }
+
+     .contenedor-columnas {
+          display: block;
+          gap: 16px;
+          padding: 0 8px;
+     }
+
+     .principal,
+     .contacto-preview {
+          padding: 14px;
+          margin: 24px auto;
+          max-width: 95vw;
+     }
+}
+
+/* MEDIA QUERRY MAPA CONTACTO */
+
+@media (max-width: 600px) {
+
+     /* LEYENDA */
+     .leyenda {
+          max-width: 97%;
+          padding: 11px 7px;
+          font-size: 0.98em;
+     }
+
+     .leyenda strong {
+          font-size: 1.09em;
+     }
+
+     /* MAPA CONTACTO */
+     .mapa-contacto {
+          width: 98%;
+          min-width: 0;
+          padding: 12px 5px;
+     }
+
+     .mapa-contacto iframe {
+          height: 180px;
+          border-radius: 5px;
+     }
+}
+
+/* MEDIA QUERRY PAGINA MITOLOGIA */
+
+@media (max-width: 850px) {
+     .dioses {
+          flex-direction: column;
+          gap: 18px;
+          padding: 24px 6px;
+     }
+
+     .dioses div {
+          width: 100%;
+          max-width: none;
+          min-width: 0;
+     }
+}
