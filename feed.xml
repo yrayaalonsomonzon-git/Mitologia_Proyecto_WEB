@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Mundo de las Mitologias</title>
+    <link>http://127.0.0.1:5500/index.html</link>
+    <description>Últimas novedades de Mundo de las Mitologias</description>
+    <language>es-es</language>
+
+    <item>
+      <title>Primera novedad</title>
+      <link>http://127.0.0.1:5500/index.html</link>
+      <description>Cambio de color del borde de las tarjetas</description>
+      <pubDate>Viernes, 27 de Marzo de 2026</pubDate>
+      <guid>http://127.0.0.1:5500/index.html</guid>
+    </item>
+
+    <item>
+      <title>Segunda novedad</title>
+      <link>http://127.0.0.1:5500/griega/griega.html</link>
+      <description>Cambio Color bordes de la sección carrusel. Al cambiarlo en una página, se cambia en todas las páginas se cambia en todas.</description>
+      <pubDate>Viernes, 27 de Marzo de 2026</pubDate>
+      <guid>http://127.0.0.1:5500/griega/griega.html</guid>
+    </item>
+
+    <item>
+        <title>Tercera novedad</title>
+        <link>http://127.0.0.1:5500/contacto/contacto.html</link>
+        <description>Añadir texto de contacto con usuarios</description>
+        <pubDate>Viernes, 27 de Marzo de 2026</pubDate>
+        <guid>http://127.0.0.1:5500/contacto/contacto.html</guid>
+      </item>
+
+  </channel>
+</rss>
